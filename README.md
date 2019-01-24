@@ -18,7 +18,8 @@ Example
 ------
 
 \_example/main.go
-```
+
+```go:_example/main.go
 func main() {
 	mw := stats.New()
 	handler := mw.WrapHandleFunc(
@@ -46,7 +47,7 @@ func main() {
 ```
 
 request to \_example/main.go.  
-```
+```bash
 $ curl -s http://localhost:9999/stats | jq .
 {
   "request": {
