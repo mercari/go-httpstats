@@ -1,3 +1,5 @@
+export GO111MODULE=on
+
 .PHONY: check fmt vet
 
 .DEFALT_GOAL:= check
