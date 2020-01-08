@@ -1,11 +1,10 @@
-.PHONY: dep check fmt vet
+export GO111MODULE=on
+
+.PHONY: check fmt vet
 
 .DEFALT_GOAL:= check
 
-dep:
-	@dep ensure
-
-check: dep
+check:
 	go test ./...
 
 fmt:
