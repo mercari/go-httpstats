@@ -218,7 +218,7 @@ func (m *Metrics) insertRequestBuffer(t float64) {
 	m.reqIdx = (m.reqIdx + 1) % len(m.requests)
 }
 
-// WriteHeader is exnteded http.ResponseWriter's one.
+// WriteHeader is extended http.ResponseWriter's one.
 // WriteHeader records HTTP status.
 func (r *statusRecorder) WriteHeader(statusCode int) {
 	r.statusCode = statusCode
