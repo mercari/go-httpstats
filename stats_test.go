@@ -26,10 +26,10 @@ func TestSimple(t *testing.T) {
 		t.Fatal(err)
 	}
 	if d.Request.Count != 1 {
-		t.Errorf("Count: expected 1 but acutual %d", d.Request.Count)
+		t.Errorf("Count: expected 1 but actual %d", d.Request.Count)
 	}
 	if d.Request.StatusCount[200] != 1 {
-		t.Errorf("StatusCount[200]: expected 1 but acutual %d", d.Request.StatusCount[200])
+		t.Errorf("StatusCount[200]: expected 1 but actual %d", d.Request.StatusCount[200])
 	}
 
 }
@@ -54,9 +54,9 @@ func Test500(t *testing.T) {
 		t.Fatal(err)
 	}
 	if d.Request.Count != 1 {
-		t.Errorf("Count: expected 1 but acutual %d", d.Request.Count)
+		t.Errorf("Count: expected 1 but actual %d", d.Request.Count)
 	}
 	if d.Request.StatusCount[500] != 1 {
-		t.Errorf("StatusCount[500]: expected 1 but acutual %d", d.Request.StatusCount[500])
+		t.Errorf("StatusCount[500]: expected 1 but actual %d", d.Request.StatusCount[500])
 	}
 }
